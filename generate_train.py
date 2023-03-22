@@ -2,10 +2,10 @@ import os
 
 image_files = []
 i = 0
-os.chdir(os.path.join("data", "train/snake"))
+os.chdir(os.path.join("data", "train"))
 for filename in os.listdir(os.getcwd()):
     if filename.endswith(".jpg"):
-        image_files.append("/content/pytorch-YOLOv4/data/train/snake" + filename) 
+        image_files.append("/content/pytorch-YOLOv4/data/train/" + filename) 
         i+=1
 print('Total Train JPG file = ',i) 
 i = 0 
